@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>مفاجأة لـ محمد ❤️</title>
+<title>مفاجأة لـ رقية ❤️</title>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Tajawal:wght@500;700&display=swap');
 
@@ -123,7 +123,6 @@
         to { opacity: 1; }
     }
 
-    /* تأثيرات البارتكل (الإيموجيات والصور) */
     .emoji-particle {
         position: absolute;
         font-size: 28px;
@@ -135,8 +134,8 @@
 
     .img-particle {
         position: absolute;
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         object-fit: cover;
         border-radius: 8px;
         border: 2px solid white;
@@ -146,7 +145,6 @@
         z-index: 9999;
     }
 
-    /* هذا الأنيميشن يخليها تصعد ليفوك وتختفي (opacity: 0) بالنهاية */
     @keyframes floatParticles {
         0% { transform: translateY(0) scale(0.5) rotate(0deg); opacity: 1; }
         50% { transform: translateY(-70px) scale(1.1) rotate(15deg); opacity: 1; }
@@ -164,15 +162,15 @@
         border-radius: 10px;
     }
 
+    /* تنسيق العبارة المزخرفة والتاريخ */
     .magic-date {
-        font-size: 20px;
+        font-size: 22px;
         color: #ff4757;
         margin-top: 15px;
         font-weight: 700;
         text-shadow: 0 2px 10px rgba(255, 71, 87, 0.4);
         letter-spacing: 1px;
         animation: pulse 2s infinite ease-in-out;
-        direction: rtl;
     }
 
     @keyframes pulse {
@@ -185,67 +183,77 @@
 </head>
 <body>
 
-<audio id="bg-music" src="https://a.top4top.io/m_3728y9it55.mp3" loop></audio>
+<audio id="bg-music" src="https://k.top4top.io/m_3728u8gu30.mp3" loop></audio>
 
 <div class="step active" id="step1">
     <div class="glass-card">
         <div class="polaroid-frame">
-            <img src="https://h.top4top.io/p_3728p4dfz0.jpg" alt="صورة 1">
+            <img src="https://a.top4top.io/p_3728g1mms0.jpg" alt="Intro Cat">
         </div>
-        <h2>أنتَ محمد؟ 🤔</h2>
-        <button onclick="nextStep('step1', 'step2')">أي أني محمد! 😎</button>
+        <h2>انتي رقية؟</h2>
+        <button onclick="nextStep('step1', 'step2')">نعم</button>
     </div>
 </div>
 
 <div class="step" id="step2">
     <div class="glass-card">
         <div class="polaroid-frame">
-            <img src="https://i.top4top.io/p_37281960x1.jpg" alt="صورة 2">
+            <img src="https://b.top4top.io/p_3728cdqoh1.jpg" alt="Question Cat">
         </div>
-        <h2>أريد أكلك شي بس مستحية 🫣</h2>
-        <button onclick="nextStep('step2', 'step3')">يا الله شصاير! 😨</button>
+        <h2>اريد اسألج سؤال</h2>
+        <button onclick="nextStep('step2', 'step3')">شنو هو؟🤔</button>
     </div>
 </div>
 
 <div class="step" id="step3">
     <div class="glass-card">
         <div class="polaroid-frame">
-            <img src="https://j.top4top.io/p_3728xkua32.jpg" alt="صورة 3">
+            <img src="https://c.top4top.io/p_3728640222.jpg" alt="Shy Cat">
         </div>
-        <h2>تحب نور؟ ❤️</h2>
-        <button onclick="nextStep('step3', 'step4')">شي أكيد أحبها! 😍</button>
+        <h2>بس استحي احجي😅</h2>
+        <button onclick="nextStep('step3', 'step4')">ها؟ 🙂</button>
     </div>
 </div>
 
 <div class="step" id="step4">
     <div class="glass-card">
         <div class="polaroid-frame">
-            <img src="https://k.top4top.io/p_3728j9fw53.jpg" alt="صورة 4">
+            <img src="https://d.top4top.io/p_3728p4x7w3.jpg" alt="Confession Cat">
         </div>
-        <h2>كول أحبج 😊</h2>
-        <button onclick="nextStep('step4', 'step5')">أحبج ❤️🥰</button>
+        <h2>تحبين منتظر؟</h2>
+        <button onclick="nextStep('step4', 'step5')">مااعرف 🙈</button>
     </div>
 </div>
 
 <div class="step" id="step5">
-    <div class="glass-card" style="max-width: 600px;">
-        <div class="poem-container" id="poem-text"></div>
-        <button id="next-final-btn" onclick="nextStep('step5', 'step6')">الله 😍</button>
+    <div class="glass-card">
+        <div class="polaroid-frame">
+            <img src="https://e.top4top.io/p_37285hu4g4.jpg" alt="Command Cat">
+        </div>
+        <h2>كولي احبك</h2>
+        <button onclick="nextStep('step5', 'step6')">احبك ❤️</button>
     </div>
 </div>
 
 <div class="step" id="step6">
+    <div class="glass-card" style="max-width: 600px;">
+        <div class="poem-container" id="poem-text"></div>
+        <button id="next-final-btn" onclick="nextStep('step6', 'step7')">ياييييي🥺🥺</button>
+    </div>
+</div>
+
+<div class="step" id="step7">
     <div class="glass-card">
         <div id="final-polaroid" class="polaroid-frame">
-            <img src="https://l.top4top.io/p_3728mlnyk4.jpg" alt="الصورة النهائية" style="width: 240px; height: 240px;">
+            <img src="https://g.top4top.io/p_3728qihx60.png" alt="Final Frame" style="width: 240px; height: 240px;">
         </div>
-        <h2 style="font-size: 38px; color: #ff7675; margin: 0;">أحبك ❤️</h2>
-        <p class="magic-date">✨ بدونك جانت حياتي فاضية 2024/3/27 ✨</p>
+        <h2 style="font-size: 38px; color: #ff7675; margin: 0;">أحبج ❤️</h2>
+        <p class="magic-date">✨ لا انسى سحركِ 2018/5/14 ✨</p>
     </div>
 </div>
 
 <script>
-    const poem = "يَا مُحَمَّد، يَا سَنَدِي وَقُوَّتِي...\nأَنْتَ الرَّجُل الَّذِي بِهِ تَكْتَمِل قِصَّتِي...\nتَعَبَك رَاحَة لِي، وَرَاحَتُك هِيَ مُنْيَتِي...\nأَرَاك أَبًا لِأَطْفَالِي، وَقُدْوَة لِعَائِلَتِي...\nبِوُجُودِك، أَشْعُر بِالْأَمَان، وَتَزُول كُل حَيْرَتِي...\nاللَّه يُخَلِّيك لِي يَا كُل دُنْيَتِي ❤️";
+    const poem = "يَا سِحْرَ العُيُونِ الَّذِي لا يُقَاوَمْ...\nوَيَا نَبْضَ قَلْبٍ بِالهَوَى هَائِمْ...\nأَنْتِ الحَيَاةُ، وَأَنْتِ المُنَى...\nوَمِنْ دُونِكِ العُمْرُ لَيْلٌ قَاتِمْ...\nعَيْنَاكِ قِصَّةُ عِشْقٍ طَوِيلَة...\nوَرُوحُكِ نُورٌ يُضِيءُ العَوَالِمْ ❤️";
 
     function nextStep(currentId, nextId) {
         document.getElementById(currentId).classList.remove('active');
@@ -253,12 +261,12 @@
         setTimeout(() => {
             document.getElementById(nextId).classList.add('active');
             
-            if (nextId === 'step5') {
+            if (nextId === 'step6') {
                 startTyping();
             }
             
-            if (nextId === 'step6') {
-                document.getElementById('bg-music').play().catch(e => console.log("تحتاج تتفاعل ويا الصفحة لتشغيل الصوت"));
+            if (nextId === 'step7') {
+                document.getElementById('bg-music').play().catch(e => console.log("Audio playback requires user interaction."));
             }
         }, 1200); 
     }
@@ -284,8 +292,7 @@
         typeWriter();
     }
 
-    // الإيموجيات والصور للبارتكلز
-    const emojis = ['❤️', '🌹', '🍫', '💋', '🥰', '💖', '✨'];
+    const emojis = ['❤️', '🌹', '🍫', '💋', '🥰', '💖'];
     const catImages = [
         'https://a.top4top.io/p_3728g1mms0.jpg',
         'https://b.top4top.io/p_3728cdqoh1.jpg',
@@ -295,11 +302,10 @@
     ];
 
     document.addEventListener('click', function(e) {
-        // نطلع 3 بارتكلز بكل ضغطة (مختلطة بين صور البزازين والإيموجيات)
         for (let i = 0; i < 3; i++) {
-            const isCat = Math.random() > 0.5; // نسبة 50% تطلع بزونة و50% يطلع إيموجي
-            let particle;
+            const isCat = Math.random() > 0.5; 
 
+            let particle;
             if (isCat) {
                 particle = document.createElement('img');
                 particle.src = catImages[Math.floor(Math.random() * catImages.length)];
@@ -317,7 +323,6 @@
 
             document.body.appendChild(particle);
 
-            // بعد 1.5 ثانية (من يخلص الأنيميشن ويصير شفاف)، ينحذف تماماً من الشاشة
             setTimeout(() => {
                 particle.remove();
             }, 1500);
